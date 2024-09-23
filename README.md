@@ -1,111 +1,62 @@
 # Enumeration
-Enumeration Techniques
 
 # Explore Google hacking and enumeration 
 
 # AIM:
-
 To use Google for gathering information and perform enumeration of targets
 
 ## STEPS:
-
 ### Step 1:
-
 Install kali linux either in partition or virtual box or in live mode
 
 ### Step 2:
-
 Investigate on the various Google hacking keywords and enumeration tools as follows:
-
 
 ### Step 3:
 Open terminal and try execute some kali linux commands
 
 ## Pen Test Tools Categories:  
 
-Following Categories of pen test tools are identified:
-Information Gathering.
+# Developed By: KIRUBANITHI.S
+# Register no.: 212223220047
 
-Google Hacking:
+## Google Hacking:
+## site:
+![omg1](https://github.com/user-attachments/assets/38e360e6-e21d-4b51-8d64-415e4bd8ed8f)
 
-Google hacking, also known as Google dorking, is a technique that involves using advanced operators to perform targeted searches on Google. These operators can be used to search for specific types of information, such as sensitive data that may have been inadvertently exposed on the web. Here are some advanced operators that can be used for Google hacking:
+## filetype:
+![omg2](https://github.com/user-attachments/assets/17407d46-1a8b-4f7e-ad98-7786dcd8e0fe)
 
-site: This operator allows you to search for pages that are within a specific website or domain. For example, "site:example.com" would search for pages that are on the example.com domain.
-Following searches for all the sites that is in the domain yahoo.com
+## intext: 
+![omg3](https://github.com/user-attachments/assets/909ee45b-77a2-4f08-b930-3201e2fbd217)
 
-filetype: This operator allows you to search for files of a specific type. For example, "filetype:pdf" would search for all PDF files.
-Following searches for pdf file in the domain yahoo.com
+## inurl: 
+![omg4](https://github.com/user-attachments/assets/6e658c9e-c47c-467f-abc4-faeaa3547932)
 
+## intitle: 
+![omg5](https://github.com/user-attachments/assets/1ecf4b65-77bd-4175-952a-cb7fe121d60d)
 
+## link:
+![omg6](https://github.com/user-attachments/assets/e9a71bd6-9f55-412b-bd3a-bd93bf6be272)
 
-intext: This operator allows you to search for pages that contain specific text within the body of the page. For example, "intext:password" would search for pages that contain the word "password" within the body of the page.
+## cache: 
+![omg7](https://github.com/user-attachments/assets/2258625b-f0d2-4e59-9edd-cadd5a9fc90a)
 
+## DNS Enumeration:
+## DNS Recon:
+![omg8](https://github.com/user-attachments/assets/fda0e7fe-b96b-40bf-b799-0ec3bf515ce3)
 
-inurl: This operator allows you to search for pages that contain specific text within the URL. For example, "inurl:admin" would search for pages that contain the word "admin" within the URL.
+## dnsenum:
 
-intitle: This operator allows you to search for pages that contain specific text within the title tag. For example, "intitle:index of" would search for pages that contain "index of" within the title tag.
-
-link: This operator allows you to search for pages that link to a specific URL. For example, "link:example.com" would search for pages that link to the example.com domain.
-
-cache: This operator allows you to view the cached version of a page. For example, "cache:example.com" would show the cached version of the example.com website.
-
- 
-#DNS Enumeration
-
-
-##DNS Recon
-provides the ability to perform:
-Check all NS records for zone transfers
-Enumerate general DNS records for a given domain (MX, SOA, NS, A, AAAA, SPF , TXT)
-Perform common SRV Record Enumeration
-Top level domain expansion
-## OUTPUT:
+![omg9](https://github.com/user-attachments/assets/102dee4f-ef76-47c5-bdda-02b1e537d6ad)
+![omg10](https://github.com/user-attachments/assets/14298da8-2078-4e42-bf3d-e74c5ae83433)
 
 
+## smtp-user-enum:
+![omg11](https://github.com/user-attachments/assets/9f5e1a0b-4670-4c78-aa44-16c8c3f15231)
 
-
-
-
-
-##dnsenum
-Dnsenum is a multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks. The main purpose of Dnsenum is to gather as much information as possible about a domain. The program currently performs the following operations:
-
-Get the host’s addresses (A record).
-Get the namservers (threaded).
-Get the MX record (threaded).
-Perform axfr queries on nameservers and get BIND versions(threaded).
-Get extra names and subdomains via google scraping (google query = “allinurl: -www site:domain”).
-Brute force subdomains from file, can also perform recursion on subdomain that have NS records (all threaded).
-Calculate C class domain network ranges and perform whois queries on them (threaded).
-Perform reverse lookups on netranges (C class or/and whois netranges) (threaded).
-Write to domain_ips.txt file ip-blocks.
-This program is useful for pentesters, ethical hackers and forensics experts. It also can be used for security tests.
-
-
-##smtp-user-enum
-Username guessing tool primarily for use against the default Solaris SMTP service. Can use either EXPN, VRFY or RCPT TO.
-
-
-In metasploit list all the usernames using head /etc/passwd or cat /etc/passwd:
-
-select any username in the first column of the above file and check the same
-
-
-#Telnet for smtp enumeration
-Telnet allows to connect to remote host based on the port no. For smtp port no is 25
-telnet <host address> 25 to connect
-and issue appropriate commands
-  
- ##Output
-  
-  
-
-## nmap –script smtp-enum-users.nse <hostname>
-
-The smtp-enum-users.nse script attempts to enumerate the users on a SMTP server by issuing the VRFY, EXPN or RCPT TO commands. The goal of this script is to discover all the user accounts in the remote system.
-
-
-## OUTPUT:
+## nmap –script smtp-enum-users.nse <hostname>:
+![omg12](https://github.com/user-attachments/assets/c91e228e-0914-41bc-b9b4-a6d2988d9940)
 
 
 ## RESULT:
